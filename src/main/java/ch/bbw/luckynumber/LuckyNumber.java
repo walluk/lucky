@@ -18,6 +18,10 @@ public class LuckyNumber {
     }
 
     public List<Integer> doubleDice() {
+        List<Integer> list = new ArrayList<>();
+        Random random = new Random();
+        list.add(random.nextInt(6) + 1); // Erster Würfeln
+        list.add(random.nextInt(6) + 1); // Zweiter Würfeln
         return list;
     }
 
